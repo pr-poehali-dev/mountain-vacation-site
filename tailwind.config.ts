@@ -1,32 +1,23 @@
 
-import type { Config } from "tailwindcss";
+import type { Config } from 'tailwindcss';
 
 const config: Config = {
-  content: [
-    "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}",
-  ],
+  content: ['./src/**/*.{js,jsx,ts,tsx}'],
   theme: {
     extend: {
-      colors: {
-        "mountain-dark": "#2C3A2F",
-        "mountain-medium": "#4D5C4A",
-        "mountain-light": "#EAEEE7",
-        "mountain-green": "#395144",
-        "mountain-text": "#4A4A4A",
-        "sidebar": {
-          DEFAULT: "hsl(var(--sidebar))",
-          foreground: "hsl(var(--sidebar-foreground))",
-          border: "hsl(var(--sidebar-border))",
-          accent: "hsl(var(--sidebar-accent))",
-          "accent-foreground": "hsl(var(--sidebar-accent-foreground))",
-          ring: "hsl(var(--sidebar-ring))",
-        },
-      },
       fontFamily: {
-        cormorant: ["Cormorant Garamond", "serif"],
-        montserrat: ["Montserrat", "sans-serif"],
+        'cormorant': ['Cormorant', 'serif'],
+        'montserrat': ['Montserrat', 'sans-serif'],
       },
+      colors: {
+        'mountain-dark': '#393939',
+        'mountain-light': '#e8e8e6',
+        'mountain-green': '#4D5C4A',
+        'mountain-accent': '#788878',
+      },
+      backgroundImage: {
+        'hero-pattern': "url('https://images.unsplash.com/photo-1465056836041-7f43ac27dcb5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2071&q=80')",
+      }
     },
   },
   plugins: [],

@@ -1,53 +1,77 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap');
-
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Cormorant:wght@300;400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap');
 
 :root {
-  --mountain-dark: #2C3A2F;
-  --mountain-medium: #4D5C4A;
-  --mountain-light: #EAEEE7;
-  --mountain-green: #395144;
-  --mountain-text: #4A4A4A;
+  --mountain-dark: #393939;
+  --mountain-light: #e8e8e6;
+  --mountain-green: #4D5C4A;
+  --mountain-accent: #788878;
+  --mountain-white: #ffffff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
   font-family: 'Montserrat', sans-serif;
-  color: var(--mountain-text);
-  background-color: var(--mountain-light);
+  color: var(--mountain-dark);
+  line-height: 1.6;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Cormorant Garamond', serif;
-  font-weight: 500;
+  font-family: 'Cormorant', serif;
+  font-weight: 600;
+  letter-spacing: 0.05em;
 }
 
-.hero-overlay {
-  @apply absolute inset-0 bg-black/30 z-10;
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .section-title {
-  @apply font-normal text-3xl md:text-4xl uppercase tracking-wider text-mountain-dark;
+  font-size: 2.5rem;
+  color: var(--mountain-dark);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
 }
 
 .btn-outline {
-  @apply border border-white text-white px-8 py-3 transition-colors hover:bg-white/20;
+  display: inline-block;
+  padding: 0.8rem 2rem;
+  border: 1px solid var(--mountain-white);
+  color: var(--mountain-white);
+  background: transparent;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+  cursor: pointer;
 }
 
-.category-card {
-  @apply relative overflow-hidden group;
+.btn-outline:hover {
+  background: rgba(255, 255, 255, 0.1);
 }
 
-.category-card img {
-  @apply transition-transform duration-700 ease-out;
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 10;
 }
 
-.category-card:hover img {
-  @apply transform scale-105;
-}
-
-.category-content {
-  @apply absolute inset-0 flex flex-col justify-center bg-black/40 transition-opacity duration-300 p-6;
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 2rem;
+  }
 }
