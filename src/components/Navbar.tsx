@@ -5,20 +5,20 @@ import { Link } from 'react-router-dom';
 const Navbar: React.FC = () => {
   return (
     <header className="absolute top-0 left-0 w-full z-50 px-6 py-5">
-      <div className="container mx-auto flex items-center justify-between">
-        <Link to="/" className="text-white text-xl font-cormorant tracking-widest">
-          Etta's Acres
+      <div className="container-custom flex items-center justify-between">
+        <Link to="/" className="text-white text-xl font-cormorant tracking-widest uppercase">
+          Montaña
         </Link>
         
         <nav className="hidden md:flex items-center space-x-8">
-          <Link to="/homestead" className="text-white text-sm uppercase tracking-wider hover:text-white/80 transition-colors">
-            Homestead
+          <Link to="/pricing" className="text-white text-sm uppercase tracking-wider hover:text-white/80 transition-colors">
+            Pricing
           </Link>
-          <Link to="/recipes" className="text-white text-sm uppercase tracking-wider hover:text-white/80 transition-colors">
-            Recipes
+          <Link to="/visit" className="text-white text-sm uppercase tracking-wider hover:text-white/80 transition-colors">
+            Visit
           </Link>
-          <Link to="/the-blog" className="text-white text-sm uppercase tracking-wider hover:text-white/80 transition-colors">
-            The Blog
+          <Link to="/about" className="text-white text-sm uppercase tracking-wider hover:text-white/80 transition-colors">
+            About Us
           </Link>
           <Link to="/contact" className="text-white text-sm uppercase tracking-wider hover:text-white/80 transition-colors">
             Contact

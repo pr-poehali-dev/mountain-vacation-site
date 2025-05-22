@@ -4,14 +4,17 @@ import { Link } from 'react-router-dom';
 
 const CategoryNav: React.FC = () => {
   return (
-    <section className="py-6 bg-farm-cream border-t border-farm-light-brown/30">
-      <div className="container mx-auto px-6">
-        <nav className="category-nav">
-          <Link to="/design">Design</Link>
-          <Link to="/style">Style</Link>
-          <Link to="/homesteading">Homesteading</Link>
-          <Link to="/baking">Baking</Link>
-        </nav>
+    <section className="py-4 bg-mountain-medium text-white">
+      <div className="container-custom">
+        <div className="flex justify-center items-center space-x-4 md:space-x-8 text-xs md:text-sm uppercase tracking-wider">
+          <Link to="/hiking" className="hover:text-white/80 transition-colors">Hiking</Link>
+          <span>/</span>
+          <Link to="/lodging" className="hover:text-white/80 transition-colors">Lodging</Link>
+          <span>/</span>
+          <Link to="/adventure" className="hover:text-white/80 transition-colors">Adventure</Link>
+          <span>/</span>
+          <Link to="/photography" className="hover:text-white/80 transition-colors">Photography</Link>
+        </div>
       </div>
     </section>
   );
