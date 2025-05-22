@@ -16,12 +16,12 @@ const ClosingSection: React.FC = () => {
         <div className="container-custom">
           <div className="max-w-md text-white">
             <h2 className="text-3xl md:text-4xl font-cormorant uppercase tracking-wider mb-4">
-              In Love<br />with Mountains
+              Влюблены<br />в Горы
             </h2>
             <p className="text-sm leading-relaxed">
-              We are a couple of high-altitude lovers who like to explore the alpine. The crisp air, 
-              the panoramic views, and the sense of achievement when you reach the summit – 
-              these are the moments we live for and want to share with you.
+              Мы — пара любителей высокогорья, которые любят исследовать альпийский мир. Свежий воздух, 
+              панорамные виды и чувство достижения, когда вы достигаете вершины — 
+              это моменты, ради которых мы живем и которыми хотим поделиться с вами.
             </p>
           </div>
         </div>

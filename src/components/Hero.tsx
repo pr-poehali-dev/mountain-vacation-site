@@ -16,17 +16,17 @@ const Hero: React.FC = () => {
       <div className="relative h-full flex flex-col items-center justify-center z-20 text-center">
         <div className="container-custom px-6">
           <h2 className="text-white text-2xl md:text-3xl font-cormorant uppercase tracking-wide mb-2">
-            It's time to
+            Пришло время
           </h2>
           <h1 className="text-white text-5xl md:text-7xl font-cormorant uppercase tracking-wide mb-6">
-            Visit Mountains
+            Посетить Горы
           </h1>
           <p className="text-white text-base md:text-lg max-w-2xl mx-auto mb-8 leading-relaxed">
-            Crave new adventures, mystical experiences and breathtaking views? You need to visit the mountains. We make sure that you'll get an experience you'll never forget.
+            Хотите новых приключений, мистических впечатлений и захватывающих дух видов? Вам нужно посетить горы. Мы позаботимся о том, чтобы вы получили незабываемые впечатления.
           </p>
           
           <Link to="/offers" className="btn-secondary">
-            Our Offers
+            Наши предложения
           </Link>
         </div>
       </div>
