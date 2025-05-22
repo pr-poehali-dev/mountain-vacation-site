@@ -1,35 +1,31 @@
-import React from "react";
+
+import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Hero: React.FC = () => {
   return (
     <section className="relative h-screen">
-      <div
+      <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{
-          backgroundImage:
-            "url('https://images.unsplash.com/photo-1465056836041-7f43ac27dcb5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2071&q=80')",
+        style={{ 
+          backgroundImage: "url('https://images.unsplash.com/photo-1519994007676-6cf3f9b397a0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80')"
         }}
       />
       <div className="absolute inset-0 bg-black/30"></div>
-
-      <div className="relative h-full flex items-center z-20">
+      
+      <div className="relative h-full flex flex-col items-center justify-center z-20 text-center">
         <div className="container mx-auto px-6">
-          <div className="max-w-2xl">
-            <h3 className="text-white text-xl md:text-2xl font-cormorant uppercase tracking-widest mb-2">
-              Время отправиться
-            </h3>
-            <h1 className="text-white text-5xl md:text-7xl font-cormorant mb-6">
-              В ГОРЫ
-            </h1>
-            <p className="text-white text-base mb-8 leading-relaxed font-light">
-              Откройте для себя захватывающие приключения, мистические
-              впечатления и расслабляющий отдых. Вам нужно посетить горы. Мы
-              гарантируем, что вы получите незабываемые впечатления.
-            </p>
-            <button className="btn-outline uppercase tracking-widest text-sm">
-              Наши предложения
-            </button>
-          </div>
+          <h1 className="text-white text-3xl md:text-5xl font-cormorant uppercase tracking-wide mb-2">
+            Style, Recipes, & Stories
+          </h1>
+          <div className="handwritten text-white text-xl md:text-3xl mb-4">from the Farm</div>
+          <p className="text-white text-base md:text-lg max-w-2xl mx-auto mb-8 leading-relaxed">
+            A homesteading lifestyle blog, sharing our life from our Oklahoma farm
+          </p>
+          
+          <Link to="/explore" className="uppercase text-white border border-white px-6 py-2 tracking-widest text-sm hover:bg-white/20 transition-colors">
+            Explore
+          </Link>
         </div>
       </div>
     </section>

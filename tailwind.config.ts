@@ -2,22 +2,25 @@
 import type { Config } from 'tailwindcss';
 
 const config: Config = {
-  content: ['./src/**/*.{js,jsx,ts,tsx}'],
+  content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
   theme: {
     extend: {
-      fontFamily: {
-        'cormorant': ['Cormorant', 'serif'],
-        'montserrat': ['Montserrat', 'sans-serif'],
-      },
       colors: {
-        'mountain-dark': '#393939',
-        'mountain-light': '#e8e8e6',
-        'mountain-green': '#4D5C4A',
-        'mountain-accent': '#788878',
+        'farm-cream': '#f9f6f1',
+        'farm-green': '#7b8b69',
+        'farm-dark-green': '#5c6851',
+        'farm-brown': '#6b5c4c',
+        'farm-light-brown': '#a99e8c',
+        'farm-black': '#2a2a2a',
+      },
+      fontFamily: {
+        'cormorant': ['"Cormorant Garamond"', 'serif'],
+        'montserrat': ['Montserrat', 'sans-serif'],
+        'dancing': ['"Dancing Script"', 'cursive'],
       },
       backgroundImage: {
-        'hero-pattern': "url('https://images.unsplash.com/photo-1465056836041-7f43ac27dcb5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2071&q=80')",
-      }
+        'farm-pattern': "url('/img/farm-pattern.png')",
+      },
     },
   },
   plugins: [],
