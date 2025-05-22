@@ -5,7 +5,7 @@ const Categories: React.FC = () => {
   return (
     <section className="py-20 bg-mountain-light">
       <div className="container mx-auto px-6">
-        <h2 className="section-title text-center mb-16">СВОБОДА ЖИТЬ</h2>
+        <h2 className="section-title text-center font-cormorant mb-16">СВОБОДА ЖИТЬ</h2>
         
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Категория 1 */}
@@ -16,7 +16,7 @@ const Categories: React.FC = () => {
               className="w-full h-64 object-cover"
             />
             <div className="category-content flex flex-col items-center">
-              <h3 className="text-white text-xl uppercase tracking-wide mb-4 text-center">Приключения</h3>
+              <h3 className="text-white text-xl font-cormorant uppercase tracking-wide mb-4 text-center">Приключения</h3>
               <button className="border border-white text-white text-xs px-4 py-2 uppercase tracking-wider hover:bg-white/20 transition-colors">
                 Исследовать горы
               </button>
@@ -31,7 +31,7 @@ const Categories: React.FC = () => {
               className="w-full h-64 object-cover"
             />
             <div className="category-content flex flex-col items-center">
-              <h3 className="text-white text-xl uppercase tracking-wide mb-4 text-center">Культура</h3>
+              <h3 className="text-white text-xl font-cormorant uppercase tracking-wide mb-4 text-center">Культура</h3>
               <button className="border border-white text-white text-xs px-4 py-2 uppercase tracking-wider hover:bg-white/20 transition-colors">
                 Понять традиции
               </button>
@@ -46,7 +46,7 @@ const Categories: React.FC = () => {
               className="w-full h-64 object-cover"
             />
             <div className="category-content flex flex-col items-center">
-              <h3 className="text-white text-xl uppercase tracking-wide mb-4 text-center">Релаксация</h3>
+              <h3 className="text-white text-xl font-cormorant uppercase tracking-wide mb-4 text-center">Релаксация</h3>
               <button className="border border-white text-white text-xs px-4 py-2 uppercase tracking-wider hover:bg-white/20 transition-colors">
                 Отдохнуть в горах
               </button>

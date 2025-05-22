@@ -15,13 +15,13 @@ const InfoSection: React.FC = () => {
           </div>
           
           <div className="px-4 lg:px-8">
-            <h2 className="section-title mb-8">МЕСТО ДЛЯ ДУШИ</h2>
+            <h2 className="section-title font-cormorant mb-8">МЕСТО ДЛЯ ДУШИ</h2>
             
-            <p className="text-mountain-dark text-base mb-6 leading-relaxed">
+            <p className="text-mountain-dark text-base mb-6 leading-relaxed font-montserrat font-light">
               Исследуйте горы, где каждый рассвет открывает новые удивительные виды. Величественные горные пейзажи предлагают редкую возможность найти себя и насладиться моментами истинного спокойствия.
             </p>
             
-            <p className="text-mountain-dark text-base mb-6 leading-relaxed">
+            <p className="text-mountain-dark text-base mb-6 leading-relaxed font-montserrat font-light">
               Наша команда экспертов-путешественников поможет вам выбрать идеальный тур, будь то активный треккинг, культурное погружение или спокойный отдых. Мы знаем точно, что нужно для незабываемого путешествия в горы.
             </p>
             

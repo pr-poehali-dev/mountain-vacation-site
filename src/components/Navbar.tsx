@@ -6,7 +6,7 @@ const Navbar: React.FC = () => {
   return (
     <header className="absolute top-0 left-0 w-full z-50 px-6 py-4">
       <div className="container mx-auto flex items-center justify-between">
-        <Link to="/" className="text-white text-2xl font-semibold uppercase tracking-widest">
+        <Link to="/" className="text-white text-2xl font-cormorant uppercase tracking-widest">
           Альтитуда
         </Link>
         
